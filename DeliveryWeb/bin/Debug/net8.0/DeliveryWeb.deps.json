@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DeliveryWeb/1.0.0": {
+        "runtime": {
+          "DeliveryWeb.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DeliveryWeb/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
