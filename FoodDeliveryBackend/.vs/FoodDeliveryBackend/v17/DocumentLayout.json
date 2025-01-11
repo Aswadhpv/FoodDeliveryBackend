@@ -3,58 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\migrations\\20250111072552_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\models\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{216709F7-7E87-476A-80BA-A1C4EDCBDB24}|..\\BLL\\BLL.csproj|c:\\users\\aswad\\desktop\\backend\\bll\\services\\dishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\middlewares\\tokenvalidationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:middlewares\\tokenvalidationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{216709F7-7E87-476A-80BA-A1C4EDCBDB24}|..\\BLL\\BLL.csproj|c:\\users\\aswad\\desktop\\backend\\bll\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\fooddeliverybackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:fooddeliverybackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\services\\dishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,24 +19,28 @@
       "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\middlewares\\tokenvalidationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:middlewares\\tokenvalidationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\controllers\\dishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:controllers\\dishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\configuration\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:configuration\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AE012C0-C952-4D22-8A8C-60D4603F088B}|..\\DTO\\DTO.csproj|c:\\users\\aswad\\desktop\\backend\\dto\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -100,7 +58,28 @@
       "AbsoluteMoniker": "D:0:0:{0AE012C0-C952-4D22-8A8C-60D4603F088B}|..\\DTO\\DTO.csproj|c:\\users\\aswad\\desktop\\backend\\dto\\dishdtos\\createdishdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{216709F7-7E87-476A-80BA-A1C4EDCBDB24}|..\\BLL\\BLL.csproj|c:\\users\\aswad\\desktop\\backend\\bll\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{216709F7-7E87-476A-80BA-A1C4EDCBDB24}|..\\BLL\\BLL.csproj|c:\\users\\aswad\\desktop\\backend\\bll\\services\\dishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{216709F7-7E87-476A-80BA-A1C4EDCBDB24}|..\\BLL\\BLL.csproj|c:\\users\\aswad\\desktop\\backend\\bll\\configuration\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -109,8 +88,14 @@
       "AbsoluteMoniker": "D:0:0:{216709F7-7E87-476A-80BA-A1C4EDCBDB24}|..\\BLL\\BLL.csproj|c:\\users\\aswad\\desktop\\backend\\bll\\configuration\\automapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A4CD1F08-E003-4C31-80E7-BADBC5DAC877}|..\\DAL\\DAL.csproj|c:\\users\\aswad\\desktop\\backend\\dal\\migrations\\20250111072552_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\AppData\\Local\\Temp\\.vsdbgsrc\\c419dad7302b3e96c2c38cca4039887fbe745db760d3004f23d2549a94084090\\AuthenticationOptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -120,7 +105,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 201,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 28,
           "Children": [
             {
               "$type": "Bookmark",
@@ -128,58 +113,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApplicationDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeToolTip": "..\\DAL\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T07:26:06.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "20250111072552_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Migrations\\20250111072552_InitialCreate.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\Migrations\\20250111072552_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Migrations\\20250111072552_InitialCreate.cs",
-              "RelativeToolTip": "..\\DAL\\Migrations\\20250111072552_InitialCreate.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T07:25:59.925Z",
-              "EditorCaption": ""
+              "Title": "FoodDeliveryBackend.http",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\FoodDeliveryBackend.http",
+              "RelativeDocumentMoniker": "FoodDeliveryBackend.http",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\FoodDeliveryBackend.http",
+              "RelativeToolTip": "FoodDeliveryBackend.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-01-11T08:53:11.104Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ApplicationDbContextFactory.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\ApplicationDbContextFactory.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\ApplicationDbContextFactory.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\ApplicationDbContextFactory.cs",
-              "RelativeToolTip": "..\\DAL\\ApplicationDbContextFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAB4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T07:12:56.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ITokenService.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Interfaces\\ITokenService.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\Interfaces\\ITokenService.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Interfaces\\ITokenService.cs",
-              "RelativeToolTip": "..\\DAL\\Interfaces\\ITokenService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:53:56.43Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "DishService.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Services\\DishService.cs",
               "RelativeDocumentMoniker": "Services\\DishService.cs",
@@ -187,11 +133,11 @@
               "RelativeToolTip": "Services\\DishService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:48:06.696Z"
+              "WhenOpened": "2025-01-11T08:53:07.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 3,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
@@ -199,47 +145,23 @@
               "RelativeToolTip": "Services\\AuthService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:48:04.762Z"
+              "WhenOpened": "2025-01-11T08:53:05.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:47:25.713Z"
+              "DocumentIndex": 9,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-11T08:52:37.175Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:47:20.157Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "DishController.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\DishController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DishController.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\DishController.cs",
-              "RelativeToolTip": "Controllers\\DishController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:47:17.531Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 10,
               "Title": "UserRegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserRegisterDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\UserRegisterDto.cs",
@@ -247,156 +169,11 @@
               "RelativeToolTip": "..\\DTO\\UserRegisterDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:47:03.44Z"
+              "WhenOpened": "2025-01-11T08:52:31.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\Models\\OrderDetail.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\OrderDetail.cs",
-              "RelativeToolTip": "..\\DAL\\Models\\OrderDetail.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:46:28.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\Models\\Order.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\Order.cs",
-              "RelativeToolTip": "..\\DAL\\Models\\Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:46:25.35Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Dish.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\Dish.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\Models\\Dish.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\Dish.cs",
-              "RelativeToolTip": "..\\DAL\\Models\\Dish.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:46:22.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\CartItem.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\Models\\CartItem.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\CartItem.cs",
-              "RelativeToolTip": "..\\DAL\\Models\\CartItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:46:20.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "JwtSettings.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Configuration\\JwtSettings.cs",
-              "RelativeDocumentMoniker": "..\\BLL\\Configuration\\JwtSettings.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Configuration\\JwtSettings.cs",
-              "RelativeToolTip": "..\\BLL\\Configuration\\JwtSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:45:41.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "AutoMapperConfig.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Configuration\\AutoMapperConfig.cs",
-              "RelativeDocumentMoniker": "..\\BLL\\Configuration\\AutoMapperConfig.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Configuration\\AutoMapperConfig.cs",
-              "RelativeToolTip": "..\\BLL\\Configuration\\AutoMapperConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:45:38.166Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DishService.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Services\\DishService.cs",
-              "RelativeDocumentMoniker": "..\\BLL\\Services\\DishService.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Services\\DishService.cs",
-              "RelativeToolTip": "..\\BLL\\Services\\DishService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:45:30.629Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\User.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\User.cs",
-              "RelativeToolTip": "..\\DAL\\Models\\User.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAQwAkAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:52:19.549Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\Models\\Role.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\Role.cs",
-              "RelativeToolTip": "..\\DAL\\Models\\Role.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:41:08.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "JwtSettings.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Configuration\\JwtSettings.cs",
-              "RelativeDocumentMoniker": "Configuration\\JwtSettings.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Configuration\\JwtSettings.cs",
-              "RelativeToolTip": "Configuration\\JwtSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:33:14.586Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-09T14:32:15.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\Interfaces\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "..\\DAL\\Interfaces\\IAuthService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:24:04.712Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 11,
               "Title": "UserLoginDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserLoginDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\UserLoginDto.cs",
@@ -404,128 +181,272 @@
               "RelativeToolTip": "..\\DTO\\UserLoginDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T14:16:38.093Z"
+              "WhenOpened": "2025-01-11T08:52:29.149Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Services\\AuthService.cs",
-              "RelativeToolTip": "..\\DAL\\Services\\AuthService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T13:47:41.136Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "..\\DAL\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T13:27:50.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TokenValidationMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Middlewares\\TokenValidationMiddleware.cs",
-              "RelativeDocumentMoniker": "Middlewares\\TokenValidationMiddleware.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Middlewares\\TokenValidationMiddleware.cs",
-              "RelativeToolTip": "Middlewares\\TokenValidationMiddleware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T12:06:14.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "..\\BLL\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Services\\AuthService.cs",
-              "RelativeToolTip": "..\\BLL\\Services\\AuthService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T11:44:08.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAqwBkAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T11:42:16.433Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CreateDishDto.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\DishDtos\\CreateDishDto.cs",
-              "RelativeDocumentMoniker": "..\\DTO\\DishDtos\\CreateDishDto.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\DishDtos\\CreateDishDto.cs",
-              "RelativeToolTip": "..\\DTO\\DishDtos\\CreateDishDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T11:41:09.988Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserDtos\\LoginDto.cs",
-              "RelativeDocumentMoniker": "..\\DTO\\UserDtos\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserDtos\\LoginDto.cs",
-              "RelativeToolTip": "..\\DTO\\UserDtos\\LoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T11:40:20.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 12,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserDtos\\RegisterDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\UserDtos\\RegisterDto.cs",
               "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserDtos\\RegisterDto.cs",
               "RelativeToolTip": "..\\DTO\\UserDtos\\RegisterDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T11:39:16.884Z"
+              "WhenOpened": "2025-01-11T08:52:27.22Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserDtos\\LoginDto.cs",
+              "RelativeDocumentMoniker": "..\\DTO\\UserDtos\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserDtos\\LoginDto.cs",
+              "RelativeToolTip": "..\\DTO\\UserDtos\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:52:24.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreateDishDto.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\DishDtos\\CreateDishDto.cs",
+              "RelativeDocumentMoniker": "..\\DTO\\DishDtos\\CreateDishDto.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\DishDtos\\CreateDishDto.cs",
+              "RelativeToolTip": "..\\DTO\\DishDtos\\CreateDishDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:52:21.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ApplicationDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\ApplicationDbContextFactory.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\ApplicationDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\ApplicationDbContextFactory.cs",
+              "RelativeToolTip": "..\\DAL\\ApplicationDbContextFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:52:08.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "..\\DAL\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AQIAALcBAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:51:38.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\DAL\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:51:28.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DishService.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Services\\DishService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Services\\DishService.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Services\\DishService.cs",
+              "RelativeToolTip": "..\\BLL\\Services\\DishService.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:51:10.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Configuration\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Configuration\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Configuration\\JwtSettings.cs",
+              "RelativeToolTip": "..\\BLL\\Configuration\\JwtSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:51:06.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AutoMapperConfig.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Configuration\\AutoMapperConfig.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Configuration\\AutoMapperConfig.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Configuration\\AutoMapperConfig.cs",
+              "RelativeToolTip": "..\\BLL\\Configuration\\AutoMapperConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:51:04.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DishController.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\DishController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DishController.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\DishController.cs",
+              "RelativeToolTip": "Controllers\\DishController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:50:45.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:50:40.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:50:36.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20250111072552_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Migrations\\20250111072552_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Migrations\\20250111072552_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Migrations\\20250111072552_InitialCreate.cs",
+              "RelativeToolTip": "..\\DAL\\Migrations\\20250111072552_InitialCreate.cs",
+              "ViewState": "AQIAAPcAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:48:25.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AuthenticationOptions.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\AppData\\Local\\Temp\\.vsdbgsrc\\c419dad7302b3e96c2c38cca4039887fbe745db760d3004f23d2549a94084090\\AuthenticationOptions.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c419dad7302b3e96c2c38cca4039887fbe745db760d3004f23d2549a94084090\\AuthenticationOptions.cs",
+              "ToolTip": "C:\\Users\\aswad\\AppData\\Local\\Temp\\.vsdbgsrc\\c419dad7302b3e96c2c38cca4039887fbe745db760d3004f23d2549a94084090\\AuthenticationOptions.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c419dad7302b3e96c2c38cca4039887fbe745db760d3004f23d2549a94084090\\AuthenticationOptions.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAADYAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:20:34.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-11T08:15:36.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Services\\AuthService.cs",
+              "RelativeToolTip": "..\\BLL\\Services\\AuthService.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:14:35.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Services\\AuthService.cs",
+              "RelativeToolTip": "..\\DAL\\Services\\AuthService.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:14:04.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "..\\DAL\\Interfaces\\IAuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:13:28.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Configuration\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "Configuration\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Configuration\\JwtSettings.cs",
+              "RelativeToolTip": "Configuration\\JwtSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:12:52.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Interfaces\\ITokenService.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Interfaces\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Interfaces\\ITokenService.cs",
+              "RelativeToolTip": "..\\DAL\\Interfaces\\ITokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:12:36.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TokenValidationMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Middlewares\\TokenValidationMiddleware.cs",
+              "RelativeDocumentMoniker": "Middlewares\\TokenValidationMiddleware.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Middlewares\\TokenValidationMiddleware.cs",
+              "RelativeToolTip": "Middlewares\\TokenValidationMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T08:06:25.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAQwDEAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T09:24:48.008Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-21T08:58:20.593Z"
+              "WhenOpened": "2024-12-21T09:24:48.008Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -536,6 +457,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             }
           ]
         }
