@@ -11,5 +11,4 @@
         public User User { get; set; }
         public Dish Dish { get; set; }
     }
-
 }

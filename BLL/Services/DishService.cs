@@ -26,13 +26,14 @@ namespace FoodDeliveryBackend.Services
             {
                 Name = model.Name,
                 Description = model.Description,
-                Price = model.Price ?? 0m, // Handle nullable decimal
-                IsVegetarian = model.IsVegetarian ?? false // Handle nullable bool
+                Price = model.Price, // Direct assignment since it's non-nullable
+                IsVegetarian = model.IsVegetarian // Direct assignment since it's non-nullable
             };
 
             _context.Dishes.Add(dish);
             await _context.SaveChangesAsync();
         }
+
 
         public async Task<List<Dish>> GetDishesAsync()
         {

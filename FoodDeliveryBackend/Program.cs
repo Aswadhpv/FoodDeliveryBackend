@@ -9,6 +9,8 @@ using DAL.Data;
 using FoodDeliveryBackend.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using BLL.Services;
+using BLL.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -49,11 +51,19 @@ builder.Services.AddAuthentication(options =>
 // Register services
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<ICartService, CartService>();
+
+// Add the UserProfileService to handle user profile management
+builder.Services.AddScoped<IUserProfileService, UserProfileService>();
+
+// Controllers, Swagger, and AutoMapper
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
 
+// Configure Middleware
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -64,7 +74,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
+app.UseMiddleware<AdminAuthorizationMiddleware>(); // Ensure Admin Middleware is applied before TokenValidation
 app.UseMiddleware<TokenValidationMiddleware>();
 app.UseAuthorization();
 app.MapControllers();
+
 app.Run();
