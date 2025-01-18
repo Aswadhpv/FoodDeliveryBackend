@@ -227,8 +227,7 @@
               "RelativeToolTip": "..\\BLL\\Services\\UserProfileService.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAwwDYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T13:33:11.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T13:33:11.957Z"
             },
             {
               "$type": "Document",
@@ -312,8 +311,7 @@
               "RelativeToolTip": "Controllers\\AdminController.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAkwEAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T08:27:44.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T08:27:44.93Z"
             },
             {
               "$type": "Document",
@@ -323,7 +321,7 @@
               "RelativeDocumentMoniker": "Middlewares\\AdminAuthorizationMiddleware.cs",
               "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Middlewares\\AdminAuthorizationMiddleware.cs",
               "RelativeToolTip": "Middlewares\\AdminAuthorizationMiddleware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAcAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T08:26:21.08Z",
               "EditorCaption": ""
@@ -398,8 +396,7 @@
               "RelativeToolTip": "Controllers\\CartController.cs",
               "ViewState": "AQIAAFIAAAAAAAAAAAAAAAgAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T08:12:10.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T08:12:10.735Z"
             },
             {
               "$type": "Document",
@@ -483,8 +480,7 @@
               "RelativeToolTip": "..\\DTO\\UserDtos\\RegisterDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T08:52:27.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T08:52:27.22Z"
             },
             {
               "$type": "Document",
@@ -604,8 +600,7 @@
               "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAYwBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T08:50:40.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T08:50:40.038Z"
             },
             {
               "$type": "Document",
