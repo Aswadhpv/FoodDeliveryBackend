@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using BLL.Services;
 using BLL.Interfaces;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -53,14 +54,49 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<ICartService, CartService>();
-
-// Add the UserProfileService to handle user profile management
 builder.Services.AddScoped<IUserProfileService, UserProfileService>();
 
-// Controllers, Swagger, and AutoMapper
+// Add Swagger with Authorization configuration
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Food Delivery Backend API",
+        Version = "v1",
+        Description = "API documentation for Food Delivery Backend.",
+    });
+
+    // Add security definitions for Bearer token
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Input your Bearer token in the format 'Bearer {token}' to access this API."
+    });
+
+    // Add security requirement
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
+
+// Add Controllers, Swagger, and AutoMapper
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
 
 // Configure Middleware
@@ -69,14 +105,22 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Food Delivery Backend API v1");
+        c.RoutePrefix = string.Empty; // Swagger will be hosted at the root
+    });
 }
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
-app.UseMiddleware<AdminAuthorizationMiddleware>(); // Ensure Admin Middleware is applied before TokenValidation
-app.UseMiddleware<TokenValidationMiddleware>();
 app.UseAuthorization();
+
+// Add custom middleware
+app.UseMiddleware<AdminAuthorizationMiddleware>();
+app.UseMiddleware<TokenValidationMiddleware>();
+
+// Map Controllers
 app.MapControllers();
 
 app.Run();

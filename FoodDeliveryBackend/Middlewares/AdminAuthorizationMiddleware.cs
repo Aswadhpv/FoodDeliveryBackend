@@ -14,15 +14,16 @@ namespace FoodDeliveryBackend.Middlewares
 
         public async Task InvokeAsync(HttpContext context)
         {
-            if (context.User.IsInRole("Admin"))
-            {
-                await _next(context);
-            }
-            else
+            if (context.Request.Path.StartsWithSegments("/api/dish") &&
+                !context.User.IsInRole("Admin"))
             {
                 context.Response.StatusCode = StatusCodes.Status403Forbidden;
                 await context.Response.WriteAsync("Access denied. Admins only.");
+                return;
             }
+
+            await _next(context);
         }
     }
+
 }
