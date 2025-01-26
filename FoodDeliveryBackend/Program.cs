@@ -56,7 +56,7 @@ builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IUserProfileService, UserProfileService>();
 
-// Add Swagger with Authorization configuration
+// Add Swagger with Authorization Button
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -66,18 +66,17 @@ builder.Services.AddSwaggerGen(c =>
         Description = "API documentation for Food Delivery Backend.",
     });
 
-    // Add security definitions for Bearer token
+    // Add Bearer token support in Swagger
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
-        Type = SecuritySchemeType.ApiKey,
+        Type = SecuritySchemeType.Http,
         Scheme = "Bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "Input your Bearer token in the format 'Bearer {token}' to access this API."
+        Description = "Enter 'Bearer {your JWT token}' to authenticate."
     });
 
-    // Add security requirement
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -89,12 +88,12 @@ builder.Services.AddSwaggerGen(c =>
                     Id = "Bearer"
                 }
             },
-            new string[] {}
+            Array.Empty<string>()
         }
     });
 });
 
-// Add Controllers, Swagger, and AutoMapper
+// Add Controllers and AutoMapper
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
@@ -108,7 +107,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Food Delivery Backend API v1");
-        c.RoutePrefix = string.Empty; // Swagger will be hosted at the root
     });
 }
 
@@ -116,11 +114,10 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Add custom middleware
+// Apply custom middleware
 app.UseMiddleware<AdminAuthorizationMiddleware>();
 app.UseMiddleware<TokenValidationMiddleware>();
 
 // Map Controllers
 app.MapControllers();
-
 app.Run();

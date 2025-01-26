@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\middlewares\\adminauthorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:middlewares\\adminauthorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\middlewares\\tokenvalidationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:middlewares\\tokenvalidationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aswad\\AppData\\Local\\Temp\\.vsdbgsrc\\44aa595dc2a1078aa662bebf92f46ec0aa83d37961bfc5ec1f12f1b995219153\\AddressBinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -35,10 +43,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AE012C0-C952-4D22-8A8C-60D4603F088B}|..\\DTO\\DTO.csproj|c:\\users\\aswad\\desktop\\backend\\dto\\ratingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\middlewares\\adminauthorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:middlewares\\adminauthorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -160,10 +164,6 @@
       "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|c:\\users\\aswad\\desktop\\backend\\fooddeliverybackend\\middlewares\\tokenvalidationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B412FEBA-4042-4661-BD18-549755E99520}|FoodDeliveryBackend.csproj|solutionrelative:middlewares\\tokenvalidationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0AE012C0-C952-4D22-8A8C-60D4603F088B}|..\\DTO\\DTO.csproj|c:\\users\\aswad\\desktop\\backend\\dto\\userdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -195,11 +195,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 201,
-          "SelectedChildIndex": 31,
+          "SelectedChildIndex": 54,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AddressBinder.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\AppData\\Local\\Temp\\.vsdbgsrc\\44aa595dc2a1078aa662bebf92f46ec0aa83d37961bfc5ec1f12f1b995219153\\AddressBinder.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\44aa595dc2a1078aa662bebf92f46ec0aa83d37961bfc5ec1f12f1b995219153\\AddressBinder.cs",
@@ -207,12 +207,11 @@
               "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\44aa595dc2a1078aa662bebf92f46ec0aa83d37961bfc5ec1f12f1b995219153\\AddressBinder.cs",
               "ViewState": "AQIAAKcAAAAAAAAAAAAawK4AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T15:29:08.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T15:29:08.671Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DishDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\DishDtos\\DishDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\DishDtos\\DishDto.cs",
@@ -224,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "RatingController.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\RatingController.cs",
               "RelativeDocumentMoniker": "Controllers\\RatingController.cs",
@@ -236,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "RatingDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\RatingDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\RatingDto.cs",
@@ -248,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\User.cs",
               "RelativeDocumentMoniker": "..\\DAL\\Models\\User.cs",
@@ -260,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "..\\DAL\\Models\\OrderDetail.cs",
@@ -272,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\Order.cs",
               "RelativeDocumentMoniker": "..\\DAL\\Models\\Order.cs",
@@ -284,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Dish.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\Dish.cs",
               "RelativeDocumentMoniker": "..\\DAL\\Models\\Dish.cs",
@@ -296,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Rating.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\Rating.cs",
               "RelativeDocumentMoniker": "..\\DAL\\Models\\Rating.cs",
@@ -308,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "CartService.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Services\\CartService.cs",
               "RelativeDocumentMoniker": "..\\BLL\\Services\\CartService.cs",
@@ -320,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "ChangePasswordDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserDtos\\ChangePasswordDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\UserDtos\\ChangePasswordDto.cs",
@@ -332,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "UpdateUserProfileDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserDtos\\UpdateUserProfileDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\UserDtos\\UpdateUserProfileDto.cs",
@@ -344,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "UserProfileDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserDtos\\UserProfileDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\UserDtos\\UserProfileDto.cs",
@@ -356,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "UserProfileService.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Services\\UserProfileService.cs",
               "RelativeDocumentMoniker": "..\\BLL\\Services\\UserProfileService.cs",
@@ -368,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "IUserProfileService.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Interfaces\\IUserProfileService.cs",
               "RelativeDocumentMoniker": "..\\BLL\\Interfaces\\IUserProfileService.cs",
@@ -380,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "UserProfileController.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\UserProfileController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserProfileController.cs",
@@ -392,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "..\\DAL\\Models\\CartItem.cs",
@@ -404,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "CartItemDtos.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\CartItemDtos.cs",
               "RelativeDocumentMoniker": "..\\DTO\\CartItemDtos.cs",
@@ -416,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "OrderDetailDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\OrderDetailDto\\OrderDetailDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\OrderDetailDto\\OrderDetailDto.cs",
@@ -428,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Services\\OrderService.cs",
               "RelativeDocumentMoniker": "..\\BLL\\Services\\OrderService.cs",
@@ -440,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -452,19 +451,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "AdminAuthorizationMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Middlewares\\AdminAuthorizationMiddleware.cs",
               "RelativeDocumentMoniker": "Middlewares\\AdminAuthorizationMiddleware.cs",
               "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Middlewares\\AdminAuthorizationMiddleware.cs",
               "RelativeToolTip": "Middlewares\\AdminAuthorizationMiddleware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAABAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwBwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T08:26:21.08Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "UpdateOrderStatusDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\OrderDtos\\UpdateOrderStatusDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\OrderDtos\\UpdateOrderStatusDto.cs",
@@ -476,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "CreateOrderDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\OrderDtos\\CreateOrderDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\OrderDtos\\CreateOrderDto.cs",
@@ -488,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "UpdateCartDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\CartDtos\\UpdateCartDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\CartDtos\\UpdateCartDto.cs",
@@ -500,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "AddToCartDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\CartDtos\\AddToCartDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\CartDtos\\AddToCartDto.cs",
@@ -512,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
@@ -524,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "Controllers\\CartController.cs",
@@ -536,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "FoodDeliveryBackend.http",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\FoodDeliveryBackend.http",
               "RelativeDocumentMoniker": "FoodDeliveryBackend.http",
@@ -548,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "DishService.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Services\\DishService.cs",
               "RelativeDocumentMoniker": "Services\\DishService.cs",
@@ -560,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
@@ -572,20 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAACYAAAAAAAAAAAAowDQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-11T08:52:37.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "UserRegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserRegisterDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\UserRegisterDto.cs",
@@ -597,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "UserLoginDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserLoginDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\UserLoginDto.cs",
@@ -609,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\UserDtos\\RegisterDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\UserDtos\\RegisterDto.cs",
@@ -633,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "CreateDishDto.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DTO\\DishDtos\\CreateDishDto.cs",
               "RelativeDocumentMoniker": "..\\DTO\\DishDtos\\CreateDishDto.cs",
@@ -645,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "ApplicationDbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\ApplicationDbContextFactory.cs",
               "RelativeDocumentMoniker": "..\\DAL\\ApplicationDbContextFactory.cs",
@@ -669,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DAL\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "..\\DAL\\Data\\ApplicationDbContext.cs",
@@ -681,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "DishService.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Services\\DishService.cs",
               "RelativeDocumentMoniker": "..\\BLL\\Services\\DishService.cs",
@@ -693,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "JwtSettings.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Configuration\\JwtSettings.cs",
               "RelativeDocumentMoniker": "..\\BLL\\Configuration\\JwtSettings.cs",
@@ -717,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "DishController.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\DishController.cs",
               "RelativeDocumentMoniker": "Controllers\\DishController.cs",
@@ -729,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
@@ -741,7 +727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -777,7 +763,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -789,7 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\BLL\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "..\\BLL\\Services\\AuthService.cs",
@@ -825,7 +811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "JwtSettings.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Configuration\\JwtSettings.cs",
               "RelativeDocumentMoniker": "Configuration\\JwtSettings.cs",
@@ -849,28 +835,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 3,
               "Title": "TokenValidationMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Middlewares\\TokenValidationMiddleware.cs",
               "RelativeDocumentMoniker": "Middlewares\\TokenValidationMiddleware.cs",
               "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Middlewares\\TokenValidationMiddleware.cs",
               "RelativeToolTip": "Middlewares\\TokenValidationMiddleware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAsAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwBoAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T08:06:25.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAAAH4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-21T09:24:48.008Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-11T08:52:37.175Z"
             }
           ]
         },
