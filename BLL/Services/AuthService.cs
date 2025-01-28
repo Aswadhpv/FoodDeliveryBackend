@@ -5,62 +5,75 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
-using DAL.Interfaces;
 using FoodDeliveryBackend.Configuration;
-
+using DAL.Interfaces;
 
 namespace FoodDeliveryBackend.Services
 {
     public class AuthService : IAuthService
     {
         private readonly UserManager<User> _userManager;
-        private readonly SignInManager<User> _signInManager;
         private readonly JwtSettings _jwtSettings;
 
-        public AuthService(UserManager<User> userManager, SignInManager<User> signInManager, JwtSettings jwtSettings)
+        public AuthService(UserManager<User> userManager, JwtSettings jwtSettings)
         {
             _userManager = userManager;
-            _signInManager = signInManager;
             _jwtSettings = jwtSettings;
         }
 
         public async Task RegisterAsync(RegisterDto model)
         {
-            var existingUser = await _userManager.FindByEmailAsync(model.Email);
-            if (existingUser != null)
-            {
-                throw new ArgumentException("User with the same email already exists.");
-            }
-
             var user = new User
             {
-                Name = model.Name,
+                Name = model.FullName,
                 Email = model.Email,
-                UserName = model.Email
+                UserName = model.Email,
+                Address = model.Address,
+                BirthDate = model.BirthDate,
+                Gender = model.Gender,
+                PhoneNumber = model.PhoneNumber
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);
             if (!result.Succeeded)
             {
-                throw new Exception("User registration failed: " + string.Join(", ", result.Errors.Select(e => e.Description)));
+                throw new Exception(string.Join(", ", result.Errors.Select(e => e.Description)));
             }
         }
 
         public async Task<string> LoginAsync(LoginDto model)
         {
             var user = await _userManager.FindByEmailAsync(model.Email);
-            if (user == null)
-            {
-                throw new ArgumentException("Invalid email or password.");
-            }
-
-            var result = await _signInManager.CheckPasswordSignInAsync(user, model.Password, false);
-            if (!result.Succeeded)
-            {
-                throw new ArgumentException("Invalid email or password.");
-            }
+            if (user == null || !(await _userManager.CheckPasswordAsync(user, model.Password)))
+                throw new Exception("Invalid credentials.");
 
             return GenerateJwtToken(user);
+        }
+
+        public async Task<UserProfileDto> GetProfileAsync(int userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId.ToString());
+            if (user == null) return null;
+
+            return new UserProfileDto
+            {
+                Name = user.Name,
+                Email = user.Email,
+                Role = user.Role
+            };
+        }
+
+        public async Task UpdateProfileAsync(int userId, UpdateUserProfileDto model)
+        {
+            var user = await _userManager.FindByIdAsync(userId.ToString());
+            if (user == null) throw new Exception("User not found.");
+
+            user.Name = model.Name;
+            user.Email = model.Email;
+
+            var result = await _userManager.UpdateAsync(user);
+            if (!result.Succeeded)
+                throw new Exception("Failed to update profile.");
         }
 
         private string GenerateJwtToken(User user)
@@ -72,12 +85,12 @@ namespace FoodDeliveryBackend.Services
             {
                 Subject = new ClaimsIdentity(new[]
                 {
-                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                    new Claim("id", user.Id.ToString()),
                     new Claim(ClaimTypes.Email, user.Email),
                     new Claim(ClaimTypes.Role, user.Role)
                 }),
                 Expires = DateTime.UtcNow.AddMinutes(_jwtSettings.ExpiryInMinutes),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
