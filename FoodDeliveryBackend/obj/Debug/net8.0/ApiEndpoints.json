@@ -251,7 +251,35 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "FoodDeliveryBackend.DTOs.TokenResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
   },
   {
     "ContainingType": "FoodDeliveryBackend.Controllers.UserController",
@@ -261,7 +289,53 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 403
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
   },
   {
     "ContainingType": "FoodDeliveryBackend.Controllers.UserController",
@@ -271,7 +345,44 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "FoodDeliveryBackend.DTOs.UserProfileDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 403
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
   },
   {
     "ContainingType": "FoodDeliveryBackend.Controllers.UserController",
@@ -283,11 +394,57 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "FoodDeliveryBackend.DTOs.UpdateUserProfileDto",
+        "Type": "UpdateUserProfileDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 403
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
   },
   {
     "ContainingType": "FoodDeliveryBackend.Controllers.UserController",
@@ -303,7 +460,35 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "FoodDeliveryBackend.DTOs.TokenResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
   },
   {
     "ContainingType": "FoodDeliveryBackend.Controllers.UserProfileController",
@@ -336,7 +521,7 @@
       },
       {
         "Name": "model",
-        "Type": "FoodDeliveryBackend.DTOs.UpdateUserProfileDto",
+        "Type": "UpdateUserProfileDto",
         "IsRequired": true
       }
     ],

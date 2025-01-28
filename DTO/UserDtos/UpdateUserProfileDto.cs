@@ -1,15 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FoodDeliveryBackend.DTOs
+public class UpdateUserProfileDto
 {
-    public class UpdateUserProfileDto
-    {
-        [Required]
-        [StringLength(100, ErrorMessage = "Name must be at most 100 characters.")]
-        public string Name { get; set; }
+    [Required]
+    [StringLength(100, ErrorMessage = "Name cannot exceed 100 characters.")]
+    public string Name { get; set; }
 
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
-    }
+    [Required]
+    [EmailAddress(ErrorMessage = "Invalid email format.")]
+    public string Email { get; set; }
 }
