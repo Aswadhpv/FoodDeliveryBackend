@@ -1,55 +1,64 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using FoodDeliveryBackend.DTOs;
+using FoodDeliveryBackend.Services;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.EntityFrameworkCore;
-using DAL.Data;
-using FoodDeliveryBackend.Models;
 
 namespace FoodDeliveryBackend.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/dish")]
     [ApiController]
     public class DishController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IDishService _dishService;
 
-        public DishController(ApplicationDbContext context)
+        public DishController(IDishService dishService)
         {
-            _context = context;
+            _dishService = dishService;
         }
 
-        [Authorize(Roles = "Admin")]
-        [HttpPost]
-        public async Task<IActionResult> AddDish([FromBody] CreateDishDto model)
+        /// <summary>
+        /// Get all dishes (menu).
+        /// </summary>
+        /// <returns>List of dishes.</returns>
+        [HttpGet]
+        [ProducesResponseType(typeof(List<DishDto>), 200)]
+        [ProducesResponseType(typeof(Response), 500)]
+        public async Task<IActionResult> GetAllDishes()
         {
-            var dish = new Dish
+            try
             {
-                Name = model.Name,
-                Description = model.Description,
-                Price = model.Price,
-                IsVegetarian = model.IsVegetarian
-            };
-
-            _context.Dishes.Add(dish);
-            await _context.SaveChangesAsync();
-
-            return Ok("Dish added successfully.");
-        }
-
-        [Authorize(Roles = "Admin")]
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteDish(int id)
-        {
-            var dish = await _context.Dishes.FindAsync(id);
-            if (dish == null)
-            {
-                return NotFound("Dish not found.");
+                var dishes = await _dishService.GetDishesAsync();
+                return Ok(dishes);
             }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new Response { Status = "Error", Message = ex.Message });
+            }
+        }
 
-            _context.Dishes.Remove(dish);
-            await _context.SaveChangesAsync();
+        /// <summary>
+        /// Get a dish by ID.
+        /// </summary>
+        /// <param name="id">Dish ID.</param>
+        /// <returns>Dish details.</returns>
+        [HttpGet("{id}")]
+        [ProducesResponseType(typeof(DishDto), 200)]
+        [ProducesResponseType(typeof(Response), 404)]
+        [ProducesResponseType(typeof(Response), 500)]
+        public async Task<IActionResult> GetDishById(int id)
+        {
+            try
+            {
+                var dish = await _dishService.GetDishByIdAsync(id);
+                if (dish == null)
+                    return NotFound(new Response { Status = "Error", Message = "Dish not found." });
 
-            return Ok("Dish deleted successfully.");
+                return Ok(dish);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new Response { Status = "Error", Message = ex.Message });
+            }
         }
     }
 }

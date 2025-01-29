@@ -32,6 +32,94 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FoodDeliveryBackend.Controllers.AdminDishController",
+    "Method": "AddDish",
+    "RelativePath": "api/admin/dish",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FoodDeliveryBackend.DTOs.CreateDishDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "FoodDeliveryBackend.Controllers.AdminDishController",
+    "Method": "DeleteDish",
+    "RelativePath": "api/admin/dish/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
     "ContainingType": "FoodDeliveryBackend.Controllers.AdminController",
     "Method": "GetAllOrders",
     "RelativePath": "api/admin/orders",
@@ -122,25 +210,38 @@
   },
   {
     "ContainingType": "FoodDeliveryBackend.Controllers.DishController",
-    "Method": "AddDish",
-    "RelativePath": "api/Dish",
-    "HttpMethod": "POST",
+    "Method": "GetAllDishes",
+    "RelativePath": "api/dish",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
+    "Parameters": [],
+    "ReturnTypes": [
       {
-        "Name": "model",
-        "Type": "FoodDeliveryBackend.DTOs.CreateDishDto",
-        "IsRequired": true
+        "Type": "System.Collections.Generic.List\u00601[[FoodDeliveryBackend.DTOs.DishDto, DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
       }
-    ],
-    "ReturnTypes": []
+    ]
   },
   {
     "ContainingType": "FoodDeliveryBackend.Controllers.DishController",
-    "Method": "DeleteDish",
-    "RelativePath": "api/Dish/{id}",
-    "HttpMethod": "DELETE",
+    "Method": "GetDishById",
+    "RelativePath": "api/dish/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -150,7 +251,35 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "FoodDeliveryBackend.DTOs.DishDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 500
+      }
+    ]
   },
   {
     "ContainingType": "FoodDeliveryBackend.Controllers.OrderController",

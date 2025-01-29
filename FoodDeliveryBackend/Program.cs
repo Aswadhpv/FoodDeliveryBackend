@@ -7,6 +7,7 @@ using DAL.Interfaces;
 using DAL.Services;
 using DAL.Data;
 using FoodDeliveryBackend.Models;
+using FoodDeliveryBackend.Services; // Ensure this is included
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using BLL.Services;
@@ -53,11 +54,12 @@ builder.Services.AddAuthentication(options =>
 });
 
 // Register Services & Business Logic
-builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IAuthService, FoodDeliveryBackend.Services.AuthService>(); // Explicit reference
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IUserProfileService, UserProfileService>();
+builder.Services.AddScoped<IDishService, DishService>();
 
 // Add Swagger with Authorization Button & Example Schemas
 builder.Services.AddSwaggerGen(c =>
