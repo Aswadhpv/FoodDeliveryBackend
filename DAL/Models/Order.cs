@@ -10,6 +10,7 @@
         // Navigation Properties
         public User User { get; set; }
         public ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
+        public List<Dish> Dishes { get; set; } = new();
     }
 
 }

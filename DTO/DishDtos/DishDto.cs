@@ -13,6 +13,8 @@ namespace FoodDeliveryBackend.DTOs
         public string Description { get; set; }
         public decimal Price { get; set; }
         public bool IsVegetarian { get; set; }
+        public double AverageRating { get; set; }
+        public string Category { get; set; }
     }
 }
 

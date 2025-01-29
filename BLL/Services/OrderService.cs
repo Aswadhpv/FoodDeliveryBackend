@@ -10,6 +10,7 @@ namespace BLL.Services
         Task<List<Order>> GetUserOrdersAsync(int userId);
         Task CreateOrderAsync(CreateOrderDto model);
         Task UpdateOrderStatusAsync(int orderId, string status);
+        Task<bool> HasUserOrderedDishAsync(int userId, int dishId);
     }
 
     public class OrderService : IOrderService
@@ -56,5 +57,12 @@ namespace BLL.Services
             order.Status = status;
             await _context.SaveChangesAsync();
         }
+
+        public async Task<bool> HasUserOrderedDishAsync(int userId, int dishId)
+        {
+            return await _context.Orders
+                .AnyAsync(o => o.UserId == userId && o.Dishes.Any(d => d.Id == dishId));
+        }
+
     }
 }
