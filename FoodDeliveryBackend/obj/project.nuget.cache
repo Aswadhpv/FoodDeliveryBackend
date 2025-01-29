@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VglTPDmK1VruZL9TTiwPbf8AZEHVAXkl8voT7Sg7EybdnLZ2PAoulVSmLCFcll7Cs3ht1E9pALORonjBStuWFg==",
+  "dgSpecHash": "fA1yjnTXD8eob74tf5G2gAxvFBVCH8NZSNLRz5h0Ru0YBIpOP42SAfcTKHMALIafYkPUzIsWF2qWmolAPl0Szw==",
   "success": true,
   "projectFilePath": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\FoodDeliveryBackend.csproj",
   "expectedPackageFiles": [
@@ -76,7 +76,10 @@
     "C:\\Users\\aswad\\.nuget\\packages\\npgsql\\9.0.2\\npgsql.9.0.2.nupkg.sha512",
     "C:\\Users\\aswad\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.2\\npgsql.entityframeworkcore.postgresql.9.0.2.nupkg.sha512",
     "C:\\Users\\aswad\\.nuget\\packages\\quartz\\3.13.0\\quartz.3.13.0.nupkg.sha512",
+    "C:\\Users\\aswad\\.nuget\\packages\\scrutor\\3.3.0\\scrutor.3.3.0.nupkg.sha512",
     "C:\\Users\\aswad\\.nuget\\packages\\swashbuckle.aspnetcore\\7.2.0\\swashbuckle.aspnetcore.7.2.0.nupkg.sha512",
+    "C:\\Users\\aswad\\.nuget\\packages\\swashbuckle.aspnetcore.filters\\8.0.2\\swashbuckle.aspnetcore.filters.8.0.2.nupkg.sha512",
+    "C:\\Users\\aswad\\.nuget\\packages\\swashbuckle.aspnetcore.filters.abstractions\\8.0.2\\swashbuckle.aspnetcore.filters.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\aswad\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\7.2.0\\swashbuckle.aspnetcore.swagger.7.2.0.nupkg.sha512",
     "C:\\Users\\aswad\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\7.2.0\\swashbuckle.aspnetcore.swaggergen.7.2.0.nupkg.sha512",
     "C:\\Users\\aswad\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\7.2.0\\swashbuckle.aspnetcore.swaggerui.7.2.0.nupkg.sha512",

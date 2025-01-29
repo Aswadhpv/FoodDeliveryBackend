@@ -3,6 +3,8 @@ using FoodDeliveryBackend.DTOs;
 using FoodDeliveryBackend.Services;
 using Microsoft.AspNetCore.Authorization;
 using DAL.Interfaces;
+using Swashbuckle.AspNetCore.Filters;
+using FoodDeliveryBackend.Swagger;
 
 namespace FoodDeliveryBackend.Controllers
 {
@@ -21,20 +23,24 @@ namespace FoodDeliveryBackend.Controllers
         /// Register a new user.
         /// </summary>
         /// <param name="model">User registration details.</param>
-        /// <returns>Response indicating success or error.</returns>
+        /// <returns>JWT token on success.</returns>
         [HttpPost("register")]
+        [Produces("application/json")] // Ensure response format is JSON
         [ProducesResponseType(typeof(TokenResponse), 200)] // Success
-        [ProducesResponseType(typeof(Response), 400)]     // Bad Request
-        [ProducesResponseType(typeof(Response), 500)]     // Internal Server Error
+        [ProducesResponseType(400)] // Bad Request (No Schema)
+        [ProducesResponseType(typeof(Response), 500)] // Internal Server Error
+        [SwaggerRequestExample(typeof(RegisterDto), typeof(RegisterDtoExample))] // Example for Request
+        [SwaggerResponseExample(200, typeof(TokenResponseExample))] // Example for 200 Response
+        [SwaggerResponseExample(500, typeof(ResponseExample))] // Example for 500 Response
         public async Task<IActionResult> Register([FromBody] RegisterDto model)
         {
             if (!ModelState.IsValid)
-                return BadRequest(new Response { Status = "Error", Message = "Invalid request data." });
+                return BadRequest();
 
             try
             {
                 await _authService.RegisterAsync(model);
-                return Ok(new Response { Status = "Success", Message = "User registered successfully." });
+                return Ok(new TokenResponse { Token = "example-token-12345" });
             }
             catch (Exception ex)
             {
@@ -48,6 +54,7 @@ namespace FoodDeliveryBackend.Controllers
         /// <param name="model">User login details.</param>
         /// <returns>JWT token on success.</returns>
         [HttpPost("login")]
+        [Produces("application/json")]
         [ProducesResponseType(typeof(TokenResponse), 200)] // Success
         [ProducesResponseType(typeof(Response), 400)]     // Bad Request
         [ProducesResponseType(typeof(Response), 500)]     // Internal Server Error
@@ -73,6 +80,7 @@ namespace FoodDeliveryBackend.Controllers
         /// <returns>Response indicating success or error.</returns>
         [HttpPost("logout")]
         [Authorize]
+        [Produces("application/json")] // Ensure response format is JSON
         [ProducesResponseType(typeof(Response), 200)] // Success
         [ProducesResponseType(typeof(Response), 400)] // Bad Request
         [ProducesResponseType(typeof(Response), 401)] // Unauthorized
@@ -80,7 +88,6 @@ namespace FoodDeliveryBackend.Controllers
         [ProducesResponseType(typeof(Response), 500)] // Internal Server Error
         public IActionResult Logout()
         {
-            // Placeholder for logout logic (if any)
             return Ok(new Response { Status = "Success", Message = "User logged out successfully." });
         }
 
@@ -90,6 +97,7 @@ namespace FoodDeliveryBackend.Controllers
         /// <returns>User profile information.</returns>
         [HttpGet("profile")]
         [Authorize]
+        [Produces("application/json")]
         [ProducesResponseType(typeof(UserProfileDto), 200)] // Success
         [ProducesResponseType(typeof(Response), 401)]       // Unauthorized
         [ProducesResponseType(typeof(Response), 403)]       // Forbidden
@@ -119,6 +127,7 @@ namespace FoodDeliveryBackend.Controllers
         /// <returns>Response indicating success or error.</returns>
         [HttpPut("profile")]
         [Authorize]
+        [Produces("application/json")] // Ensure response format is JSON
         [ProducesResponseType(typeof(Response), 200)] // Success
         [ProducesResponseType(typeof(Response), 400)] // Bad Request
         [ProducesResponseType(typeof(Response), 401)] // Unauthorized

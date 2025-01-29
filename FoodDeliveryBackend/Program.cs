@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Identity;
 using BLL.Services;
 using BLL.Interfaces;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
+using FoodDeliveryBackend.Swagger; // Import the Swagger examples
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,10 +21,11 @@ var builder = WebApplication.CreateBuilder(args);
 var jwtSettings = builder.Configuration.GetSection("JwtSettings").Get<JwtSettings>();
 builder.Services.AddSingleton(jwtSettings);
 
-// Configure DbContext and Identity
+// Configure Database Context
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// Configure Identity
 builder.Services.AddIdentity<User, Role>(options =>
 {
     options.Password.RequiredLength = 6;
@@ -30,7 +33,7 @@ builder.Services.AddIdentity<User, Role>(options =>
 }).AddEntityFrameworkStores<ApplicationDbContext>()
   .AddDefaultTokenProviders();
 
-// Configure Authentication and JWT
+// Configure Authentication & JWT
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -49,14 +52,14 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// Register services
+// Register Services & Business Logic
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IUserProfileService, UserProfileService>();
 
-// Add Swagger with Authorization Button
+// Add Swagger with Authorization Button & Example Schemas
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -66,7 +69,7 @@ builder.Services.AddSwaggerGen(c =>
         Description = "API documentation for Food Delivery Backend.",
     });
 
-    // Add Bearer token support in Swagger
+    // Add Bearer Token Support
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -91,9 +94,15 @@ builder.Services.AddSwaggerGen(c =>
             Array.Empty<string>()
         }
     });
+
+    // Register Swagger Examples for Request/Response
+    c.ExampleFilters();
 });
 
-// Add Controllers and AutoMapper
+// Register Swagger Example Providers
+builder.Services.AddSwaggerExamplesFromAssemblyOf<RegisterDtoExample>();
+
+// Add Controllers & AutoMapper
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
@@ -101,6 +110,7 @@ builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
 // Configure Middleware
 var app = builder.Build();
 
+// Enable Swagger in Development
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -114,10 +124,12 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Apply custom middleware
+// Apply Custom Middleware
 app.UseMiddleware<AdminAuthorizationMiddleware>();
 app.UseMiddleware<TokenValidationMiddleware>();
 
 // Map Controllers
 app.MapControllers();
+
+// Run the Application
 app.Run();

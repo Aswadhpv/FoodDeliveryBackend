@@ -255,27 +255,21 @@
       {
         "Type": "FoodDeliveryBackend.DTOs.TokenResponse",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 200
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 400
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 500
       }
@@ -293,45 +287,35 @@
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 200
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 400
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 401
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 403
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 500
       }
@@ -349,36 +333,28 @@
       {
         "Type": "FoodDeliveryBackend.DTOs.UserProfileDto",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 200
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 401
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 403
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 500
       }
@@ -402,45 +378,35 @@
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 200
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 400
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 401
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 403
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 500
       }
@@ -464,27 +430,21 @@
       {
         "Type": "FoodDeliveryBackend.DTOs.TokenResponse",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 200
       },
       {
-        "Type": "FoodDeliveryBackend.DTOs.Response",
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 400
       },
       {
         "Type": "FoodDeliveryBackend.DTOs.Response",
         "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "StatusCode": 500
       }
