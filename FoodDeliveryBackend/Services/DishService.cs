@@ -75,7 +75,7 @@ namespace FoodDeliveryBackend.Services
                 Description = dish.Description,
                 Price = dish.Price,
                 IsVegetarian = dish.IsVegetarian,
-                Category = dish.Category,
+                Category = dish.Category.ToString(), // Fix type mismatch
                 AverageRating = dish.AverageRating
             };
         }
@@ -92,13 +92,15 @@ namespace FoodDeliveryBackend.Services
                 Price = model.Price,
                 IsVegetarian = model.IsVegetarian,
                 Category = Enum.Parse<DishCategory>(model.Category),
-                AverageRating = 0,
+                TotalRating = 0,
                 RatingsCount = 0
+                // ❌ Remove this line: AverageRating = 0,
             };
 
             _context.Dishes.Add(dish);
             await _context.SaveChangesAsync();
         }
+
 
         /// <summary>
         /// Delete a dish.
@@ -124,7 +126,7 @@ namespace FoodDeliveryBackend.Services
             // Update rating calculations
             dish.RatingsCount += 1;
             dish.TotalRating += rating;
-            dish.AverageRating = (double)dish.TotalRating / dish.RatingsCount;
+            // ❌ Remove this line: dish.AverageRating = (double)dish.TotalRating / dish.RatingsCount;
 
             await _context.SaveChangesAsync();
 
@@ -136,7 +138,7 @@ namespace FoodDeliveryBackend.Services
                 Price = dish.Price,
                 IsVegetarian = dish.IsVegetarian,
                 Category = dish.Category.ToString(),
-                AverageRating = dish.AverageRating
+                AverageRating = dish.AverageRating // This will automatically return the computed value
             };
         }
     }

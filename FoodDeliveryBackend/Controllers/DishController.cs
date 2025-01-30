@@ -87,8 +87,9 @@ namespace FoodDeliveryBackend.Controllers
         {
             try
             {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if (userId == null) return Unauthorized(new Response { Status = "Error", Message = "User not authenticated." });
+                var userIdString = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (!int.TryParse(userIdString, out int userId))
+                    return Unauthorized(new Response { Status = "Error", Message = "Invalid user ID format." });
 
                 bool canRate = await _orderService.HasUserOrderedDishAsync(userId, id);
                 if (!canRate)
@@ -121,8 +122,9 @@ namespace FoodDeliveryBackend.Controllers
                 if (rating < 1 || rating > 5)
                     return BadRequest(new Response { Status = "Error", Message = "Rating must be between 1 and 5." });
 
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if (userId == null) return Unauthorized(new Response { Status = "Error", Message = "User not authenticated." });
+                var userIdString = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (!int.TryParse(userIdString, out int userId))
+                    return Unauthorized(new Response { Status = "Error", Message = "Invalid user ID format." });
 
                 bool canRate = await _orderService.HasUserOrderedDishAsync(userId, id);
                 if (!canRate)
