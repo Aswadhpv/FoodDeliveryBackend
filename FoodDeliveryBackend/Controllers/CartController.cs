@@ -1,82 +1,101 @@
-﻿using FoodDeliveryBackend.DTOs;
-using FoodDeliveryBackend.Models;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using DAL.Data;
+﻿using Microsoft.AspNetCore.Mvc;
+using FoodDeliveryBackend.DTOs;
+using FoodDeliveryBackend.Services;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using BLL.Services;
+using BLL.Interfaces;
+using FoodDeliveryBackend.DTOs.CartDtos;
+
 
 namespace FoodDeliveryBackend.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/cart")]
     [ApiController]
     public class CartController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ICartService _cartService;
 
-        public CartController(ApplicationDbContext context)
+        public CartController(ICartService cartService)
         {
-            _context = context;
+            _cartService = cartService;
         }
 
-        // Retrieve all items in the user's cart
-        [HttpGet("{userId}")]
-        public async Task<IActionResult> GetCartItems(int userId)
+        /// <summary>
+        /// Get user cart.
+        /// </summary>
+        [HttpGet]
+        [Authorize]
+        [ProducesResponseType(typeof(List<CartDto>), 200)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(403)]
+        [ProducesResponseType(typeof(Response), 500)]
+        public async Task<IActionResult> GetUserCart()
         {
-            var cartItems = await _context.CartItems
-                .Where(ci => ci.UserId == userId)
-                .Include(ci => ci.Dish)
-                .ToListAsync();
-
-            return Ok(cartItems);
-        }
-
-        // Add an item to the cart
-        [HttpPost("add")]
-        public async Task<IActionResult> AddToCart([FromBody] AddCartItemDto model)
-        {
-            var existingItem = await _context.CartItems
-                .FirstOrDefaultAsync(ci => ci.UserId == model.UserId && ci.DishId == model.DishId);
-
-            if (existingItem != null)
+            try
             {
-                existingItem.Quantity += model.Quantity;
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null) return Unauthorized();
+
+                var cartItems = await _cartService.GetCartAsync(userId);
+                return Ok(cartItems);
             }
-            else
+            catch (Exception ex)
             {
-                var cartItem = new CartItem
-                {
-                    UserId = model.UserId,
-                    DishId = model.DishId,
-                    Quantity = model.Quantity
-                };
-                _context.CartItems.Add(cartItem);
+                return StatusCode(500, new Response { Status = "Error", Message = ex.Message });
             }
-
-            await _context.SaveChangesAsync();
-            return Ok("Item added to cart.");
         }
 
-        // Update the quantity of an item in the cart
-        [HttpPut("update/{cartItemId}")]
-        public async Task<IActionResult> UpdateCartItem(int cartItemId, [FromBody] UpdateCartItemDto model)
+        /// <summary>
+        /// Add dish to cart.
+        /// </summary>
+        [HttpPost("dish/{dishId}")]
+        [Authorize]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(403)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(typeof(Response), 500)]
+        public async Task<IActionResult> AddDishToCart(int dishId)
         {
-            var cartItem = await _context.CartItems.FindAsync(cartItemId);
-            if (cartItem == null) return NotFound("Cart item not found.");
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null) return Unauthorized();
 
-            cartItem.Quantity = model.Quantity;
-            await _context.SaveChangesAsync();
-            return Ok("Cart item updated.");
+                var result = await _cartService.AddDishToCartAsync(userId, dishId);
+                return result ? Ok() : NotFound();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new Response { Status = "Error", Message = ex.Message });
+            }
         }
 
-        // Remove an item from the cart
-        [HttpDelete("remove/{cartItemId}")]
-        public async Task<IActionResult> RemoveFromCart(int cartItemId)
+        /// <summary>
+        /// Remove dish from cart or decrease quantity.
+        /// </summary>
+        [HttpDelete("dish/{dishId}")]
+        [Authorize]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(403)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(typeof(Response), 500)]
+        public async Task<IActionResult> RemoveDishFromCart(int dishId, [FromQuery] bool increase = false)
         {
-            var cartItem = await _context.CartItems.FindAsync(cartItemId);
-            if (cartItem == null) return NotFound("Cart item not found.");
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null) return Unauthorized();
 
-            _context.CartItems.Remove(cartItem);
-            await _context.SaveChangesAsync();
-            return Ok("Item removed from cart.");
+                var result = await _cartService.RemoveDishFromCartAsync(userId, dishId, increase);
+                return result ? Ok() : NotFound();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new Response { Status = "Error", Message = ex.Message });
+            }
         }
     }
 }

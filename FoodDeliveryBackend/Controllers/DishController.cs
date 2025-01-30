@@ -4,6 +4,7 @@ using FoodDeliveryBackend.Services;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using BLL.Services;
+using BLL.Interfaces;
 
 namespace FoodDeliveryBackend.Controllers
 {
@@ -91,7 +92,7 @@ namespace FoodDeliveryBackend.Controllers
                 if (!int.TryParse(userIdString, out int userId))
                     return Unauthorized(new Response { Status = "Error", Message = "Invalid user ID format." });
 
-                bool canRate = await _orderService.HasUserOrderedDishAsync(userId, id);
+                bool canRate = await _orderService.HasUserOrderedDishAsync(userIdString, id);
                 if (!canRate)
                     return BadRequest(new Response { Status = "Error", Message = "You must order this dish before rating it." });
 
@@ -126,7 +127,7 @@ namespace FoodDeliveryBackend.Controllers
                 if (!int.TryParse(userIdString, out int userId))
                     return Unauthorized(new Response { Status = "Error", Message = "Invalid user ID format." });
 
-                bool canRate = await _orderService.HasUserOrderedDishAsync(userId, id);
+                bool canRate = await _orderService.HasUserOrderedDishAsync(userIdString, id);
                 if (!canRate)
                     return BadRequest(new Response { Status = "Error", Message = "You must order this dish before rating it." });
 

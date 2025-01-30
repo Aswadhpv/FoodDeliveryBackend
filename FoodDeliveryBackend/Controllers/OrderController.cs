@@ -1,11 +1,12 @@
-﻿using BLL.Services;
-using FoodDeliveryBackend.DTOs;
+﻿using Microsoft.AspNetCore.Mvc;
+using FoodDeliveryBackend.DTOs.OrderDtos;
+using BLL.Interfaces;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace FoodDeliveryBackend.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/order")]
     [ApiController]
     public class OrderController : ControllerBase
     {
@@ -16,28 +17,105 @@ namespace FoodDeliveryBackend.Controllers
             _orderService = orderService;
         }
 
-        [HttpGet("{userId}")]
+        /// <summary>
+        /// Get all orders for the authenticated user.
+        /// </summary>
+        [HttpGet]
         [Authorize]
-        public async Task<IActionResult> GetUserOrders(int userId)
+        [ProducesResponseType(typeof(List<OrderDto>), 200)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> GetOrders()
         {
-            var orders = await _orderService.GetUserOrdersAsync(userId);
-            return Ok(orders);
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null) return Unauthorized();
+
+                var orders = await _orderService.GetOrdersAsync(userId);
+                return Ok(orders);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Status = "Error", Message = ex.Message });
+            }
         }
 
-        [HttpPost("create")]
+        /// <summary>
+        /// Get an order by ID.
+        /// </summary>
+        [HttpGet("{orderId}")]
         [Authorize]
-        public async Task<IActionResult> CreateOrder([FromBody] CreateOrderDto model)
+        [ProducesResponseType(typeof(OrderDto), 200)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> GetOrderById(int orderId)
         {
-            await _orderService.CreateOrderAsync(model);
-            return Ok("Order created successfully.");
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null) return Unauthorized();
+
+                var order = await _orderService.GetOrderByIdAsync(userId, orderId);
+                if (order == null) return NotFound();
+
+                return Ok(order);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Status = "Error", Message = ex.Message });
+            }
         }
 
-        [HttpPut("update/{orderId}")]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> UpdateOrderStatus(int orderId, [FromBody] UpdateOrderStatusDto model)
+        /// <summary>
+        /// Create an order from cart items.
+        /// </summary>
+        [HttpPost]
+        [Authorize]
+        [ProducesResponseType(typeof(OrderDto), 200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> CreateOrder()
         {
-            await _orderService.UpdateOrderStatusAsync(orderId, model.Status);
-            return Ok("Order status updated.");
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null) return Unauthorized();
+
+                var order = await _orderService.CreateOrderAsync(userId);
+                return Ok(order);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Status = "Error", Message = ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Cancel an order.
+        /// </summary>
+        [HttpDelete("{orderId}")]
+        [Authorize]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> CancelOrder(int orderId)
+        {
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null) return Unauthorized();
+
+                var result = await _orderService.CancelOrderAsync(userId, orderId);
+                return result ? Ok() : NotFound();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Status = "Error", Message = ex.Message });
+            }
         }
     }
 }

@@ -1,17 +1,11 @@
-﻿using DAL.Data;
+﻿using FoodDeliveryBackend.DTOs.CartDtos;
 using FoodDeliveryBackend.Models;
+using DAL.Data;
 using Microsoft.EntityFrameworkCore;
+using BLL.Interfaces;
 
 namespace BLL.Services
 {
-    public interface ICartService
-    {
-        Task<List<CartItem>> GetCartAsync(int userId);
-        Task AddToCartAsync(int userId, int dishId, int quantity);
-        Task UpdateCartItemAsync(int cartItemId, int quantity);
-        Task RemoveFromCartAsync(int cartItemId);
-    }
-
     public class CartService : ICartService
     {
         private readonly ApplicationDbContext _context;
@@ -21,53 +15,56 @@ namespace BLL.Services
             _context = context;
         }
 
-        public async Task<List<CartItem>> GetCartAsync(int userId)
+        public async Task<List<CartDto>> GetCartAsync(string userId)
         {
             return await _context.CartItems
                 .Where(c => c.UserId == userId)
-                .Include(c => c.Dish)
+                .Select(c => new CartDto
+                {
+                    DishId = c.DishId,
+                    Name = c.Dish.Name,
+                    Quantity = c.Quantity,
+                    Price = c.Dish.Price,
+                })
                 .ToListAsync();
         }
 
-        public async Task AddToCartAsync(int userId, int dishId, int quantity)
+        public async Task<bool> AddDishToCartAsync(string userId, int dishId)
         {
-            var existingItem = await _context.CartItems
+            var cartItem = await _context.CartItems
                 .FirstOrDefaultAsync(c => c.UserId == userId && c.DishId == dishId);
 
-            if (existingItem != null)
+            if (cartItem != null)
             {
-                existingItem.Quantity += quantity;
+                cartItem.Quantity += 1;
             }
             else
             {
-                var cartItem = new CartItem
-                {
-                    UserId = userId,
-                    DishId = dishId,
-                    Quantity = quantity
-                };
-                _context.CartItems.Add(cartItem);
+                _context.CartItems.Add(new CartItem { UserId = userId, DishId = dishId, Quantity = 1 });
             }
 
             await _context.SaveChangesAsync();
+            return true;
         }
 
-        public async Task UpdateCartItemAsync(int cartItemId, int quantity)
+        public async Task<bool> RemoveDishFromCartAsync(string userId, int dishId, bool decrease)
         {
-            var cartItem = await _context.CartItems.FindAsync(cartItemId);
-            if (cartItem == null) throw new ArgumentException("Cart item not found.");
+            var cartItem = await _context.CartItems
+                .FirstOrDefaultAsync(c => c.UserId == userId && c.DishId == dishId);
 
-            cartItem.Quantity = quantity;
+            if (cartItem == null) return false;
+
+            if (decrease && cartItem.Quantity > 1)
+            {
+                cartItem.Quantity -= 1;
+            }
+            else
+            {
+                _context.CartItems.Remove(cartItem);
+            }
+
             await _context.SaveChangesAsync();
-        }
-
-        public async Task RemoveFromCartAsync(int cartItemId)
-        {
-            var cartItem = await _context.CartItems.FindAsync(cartItemId);
-            if (cartItem == null) throw new ArgumentException("Cart item not found.");
-
-            _context.CartItems.Remove(cartItem);
-            await _context.SaveChangesAsync();
+            return true;
         }
     }
 }
