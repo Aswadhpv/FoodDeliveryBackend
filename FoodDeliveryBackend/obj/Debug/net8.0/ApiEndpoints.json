@@ -579,9 +579,9 @@
   },
   {
     "ContainingType": "FoodDeliveryBackend.Controllers.OrderController",
-    "Method": "CancelOrder",
-    "RelativePath": "api/order/{orderId}",
-    "HttpMethod": "DELETE",
+    "Method": "ConfirmOrderDelivery",
+    "RelativePath": "api/order/{orderId}/status",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -834,63 +834,5 @@
         "StatusCode": 500
       }
     ]
-  },
-  {
-    "ContainingType": "FoodDeliveryBackend.Controllers.UserProfileController",
-    "Method": "GetUserProfile",
-    "RelativePath": "api/UserProfile/{userId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodDeliveryBackend.Controllers.UserProfileController",
-    "Method": "UpdateUserProfile",
-    "RelativePath": "api/UserProfile/{userId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "model",
-        "Type": "UpdateUserProfileDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FoodDeliveryBackend.Controllers.UserProfileController",
-    "Method": "ChangePassword",
-    "RelativePath": "api/UserProfile/{userId}/change-password",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "model",
-        "Type": "FoodDeliveryBackend.DTOs.ChangePasswordDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   }
 ]

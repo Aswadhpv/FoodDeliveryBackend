@@ -18,31 +18,7 @@ namespace FoodDeliveryBackend.Controllers
         }
 
         /// <summary>
-        /// Get all orders for the authenticated user.
-        /// </summary>
-        [HttpGet]
-        [Authorize]
-        [ProducesResponseType(typeof(List<OrderDto>), 200)]
-        [ProducesResponseType(401)]
-        [ProducesResponseType(500)]
-        public async Task<IActionResult> GetOrders()
-        {
-            try
-            {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if (userId == null) return Unauthorized();
-
-                var orders = await _orderService.GetOrdersAsync(userId);
-                return Ok(orders);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { Status = "Error", Message = ex.Message });
-            }
-        }
-
-        /// <summary>
-        /// Get an order by ID.
+        /// Get a specific order by ID.
         /// </summary>
         [HttpGet("{orderId}")]
         [Authorize]
@@ -69,7 +45,31 @@ namespace FoodDeliveryBackend.Controllers
         }
 
         /// <summary>
-        /// Create an order from cart items.
+        /// Get a list of all user orders.
+        /// </summary>
+        [HttpGet]
+        [Authorize]
+        [ProducesResponseType(typeof(List<OrderDto>), 200)]
+        [ProducesResponseType(401)]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> GetOrders()
+        {
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (userId == null) return Unauthorized();
+
+                var orders = await _orderService.GetOrdersAsync(userId);
+                return Ok(orders);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Status = "Error", Message = ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Create a new order from cart.
         /// </summary>
         [HttpPost]
         [Authorize]
@@ -94,22 +94,22 @@ namespace FoodDeliveryBackend.Controllers
         }
 
         /// <summary>
-        /// Cancel an order.
+        /// Confirm order delivery.
         /// </summary>
-        [HttpDelete("{orderId}")]
+        [HttpPost("{orderId}/status")]
         [Authorize]
         [ProducesResponseType(200)]
         [ProducesResponseType(401)]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-        public async Task<IActionResult> CancelOrder(int orderId)
+        public async Task<IActionResult> ConfirmOrderDelivery(int orderId)
         {
             try
             {
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 if (userId == null) return Unauthorized();
 
-                var result = await _orderService.CancelOrderAsync(userId, orderId);
+                var result = await _orderService.ConfirmOrderDeliveryAsync(userId, orderId);
                 return result ? Ok() : NotFound();
             }
             catch (Exception ex)

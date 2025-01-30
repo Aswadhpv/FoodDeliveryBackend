@@ -100,5 +100,17 @@ namespace BLL.Services
 
             return hasOrderedDish;
         }
+
+        public async Task<bool> ConfirmOrderDeliveryAsync(string userId, int orderId)
+        {
+            var order = await _context.Orders
+                .FirstOrDefaultAsync(o => o.UserId == userId && o.Id == orderId);
+
+            if (order == null) return false;
+
+            order.Status = "Delivered";
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 }
