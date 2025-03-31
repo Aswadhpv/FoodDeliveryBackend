@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0C4B658-14AA-4F61-99E3-D95969599B0C}|..\\DeliveryWeb\\DeliveryWeb.csproj|c:\\users\\aswad\\desktop\\backend\\deliveryweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F0C4B658-14AA-4F61-99E3-D95969599B0C}|..\\DeliveryWeb\\DeliveryWeb.csproj|c:\\users\\aswad\\desktop\\backend\\deliveryweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F0C4B658-14AA-4F61-99E3-D95969599B0C}|..\\DeliveryWeb\\DeliveryWeb.csproj|c:\\users\\aswad\\desktop\\backend\\deliveryweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -27,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "..\\DeliveryWeb\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "..\\DeliveryWeb\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\DeliveryWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\DeliveryWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T05:11:17.149Z",
+              "WhenOpened": "2025-03-31T04:55:47.987Z",
               "EditorCaption": ""
             },
             {
@@ -47,8 +47,7 @@
               "RelativeToolTip": "..\\DeliveryWeb\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T04:55:24.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T04:55:24.351Z"
             },
             {
               "$type": "Document",
