@@ -1,0 +1,28 @@
+﻿@model FoodDeliveryFrontend.Models.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+<form method="post">
+    <div class="mb-3"><label>Full Name</label><input asp-for="FullName" class="form-control" /></div>
+    <div class="mb-3"><label>Email</label><input asp-for="Email" class="form-control" /></div>
+    <div class="mb-3"><label>Password</label><input asp-for="Password" type="password" class="form-control" /></div>
+    <div class="mb-3"><label>Address</label><input asp-for="Address" class="form-control" /></div>
+    <div class="mb-3"><label>Phone Number</label><input asp-for="PhoneNumber" class="form-control" /></div>
+    <div class="mb-3"><label>Birth Date</label><input asp-for="BirthDate" type="date" class="form-control" /></div>
+    <div class="mb-3">
+        <label>Gender</label>
+        <select asp-for="Gender" class="form-select">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+    </div>
+    <button class="btn btn-success">Register</button>
+</form>
