@@ -3,6 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F0C4B658-14AA-4F61-99E3-D95969599B0C}|..\\DeliveryWeb\\DeliveryWeb.csproj|c:\\users\\aswad\\desktop\\backend\\deliveryweb\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0C4B658-14AA-4F61-99E3-D95969599B0C}|..\\DeliveryWeb\\DeliveryWeb.csproj|c:\\users\\aswad\\desktop\\backend\\deliveryweb\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F0C4B658-14AA-4F61-99E3-D95969599B0C}|..\\DeliveryWeb\\DeliveryWeb.csproj|c:\\users\\aswad\\desktop\\backend\\deliveryweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,11 +37,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 201,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\DeliveryWeb\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "..\\DeliveryWeb\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T09:43:54.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "..\\DeliveryWeb\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Controllers\\CartController.cs",
+              "RelativeToolTip": "..\\DeliveryWeb\\Controllers\\CartController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAxwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T09:42:43.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Dish.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Models\\Dish.cs",
               "RelativeDocumentMoniker": "..\\DeliveryWeb\\Models\\Dish.cs",
@@ -43,12 +75,11 @@
               "RelativeToolTip": "..\\DeliveryWeb\\Models\\Dish.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T09:20:12.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T09:20:12.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Dish\\Index.cshtml",
               "RelativeDocumentMoniker": "..\\DeliveryWeb\\Views\\Dish\\Index.cshtml",
@@ -56,12 +87,11 @@
               "RelativeToolTip": "..\\DeliveryWeb\\Views\\Dish\\Index.cshtml",
               "ViewState": "AgIAAAgAAAAAAAAAAAAkwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T09:19:01.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T09:19:01.4Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DishController.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Controllers\\DishController.cs",
               "RelativeDocumentMoniker": "..\\DeliveryWeb\\Controllers\\DishController.cs",
@@ -69,12 +99,11 @@
               "RelativeToolTip": "..\\DeliveryWeb\\Controllers\\DishController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T09:16:54.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T09:16:54.472Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "..\\DeliveryWeb\\Views\\Home\\Index.cshtml",
@@ -82,12 +111,11 @@
               "RelativeToolTip": "..\\DeliveryWeb\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T05:11:17.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T05:11:17.149Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "..\\DeliveryWeb\\Models\\ErrorViewModel.cs",
@@ -99,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "..\\DeliveryWeb\\Controllers\\HomeController.cs",
@@ -111,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Program.cs",
               "RelativeDocumentMoniker": "..\\DeliveryWeb\\Program.cs",
