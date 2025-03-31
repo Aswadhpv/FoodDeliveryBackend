@@ -3,7 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\aswad\\Desktop\\Backend\\FoodDeliveryBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0C4B658-14AA-4F61-99E3-D95969599B0C}|..\\DeliveryWeb\\DeliveryWeb.csproj|c:\\users\\aswad\\desktop\\backend\\deliveryweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F0C4B658-14AA-4F61-99E3-D95969599B0C}|..\\DeliveryWeb\\DeliveryWeb.csproj|c:\\users\\aswad\\desktop\\backend\\deliveryweb\\views\\dish\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0C4B658-14AA-4F61-99E3-D95969599B0C}|..\\DeliveryWeb\\DeliveryWeb.csproj|c:\\users\\aswad\\desktop\\backend\\deliveryweb\\controllers\\dishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0C4B658-14AA-4F61-99E3-D95969599B0C}|..\\DeliveryWeb\\DeliveryWeb.csproj|c:\\users\\aswad\\desktop\\backend\\deliveryweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F0C4B658-14AA-4F61-99E3-D95969599B0C}|..\\DeliveryWeb\\DeliveryWeb.csproj|c:\\users\\aswad\\desktop\\backend\\deliveryweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -27,19 +33,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "..\\DeliveryWeb\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "..\\DeliveryWeb\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Dish\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\DeliveryWeb\\Views\\Dish\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Dish\\Index.cshtml",
+              "RelativeToolTip": "..\\DeliveryWeb\\Views\\Dish\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T04:55:47.987Z",
+              "WhenOpened": "2025-03-31T09:19:01.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DishController.cs",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Controllers\\DishController.cs",
+              "RelativeDocumentMoniker": "..\\DeliveryWeb\\Controllers\\DishController.cs",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Controllers\\DishController.cs*",
+              "RelativeToolTip": "..\\DeliveryWeb\\Controllers\\DishController.cs*",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T09:16:54.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\DeliveryWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "..\\DeliveryWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T05:11:17.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "..\\DeliveryWeb\\Models\\ErrorViewModel.cs",
@@ -47,12 +79,11 @@
               "RelativeToolTip": "..\\DeliveryWeb\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T04:55:24.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T04:55:24.351Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "..\\DeliveryWeb\\Controllers\\HomeController.cs",
@@ -60,12 +91,11 @@
               "RelativeToolTip": "..\\DeliveryWeb\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T04:53:42.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T04:53:42.583Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Program.cs",
               "RelativeDocumentMoniker": "..\\DeliveryWeb\\Program.cs",
@@ -73,8 +103,7 @@
               "RelativeToolTip": "..\\DeliveryWeb\\Program.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAA5wBoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T04:40:52.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T04:40:52.55Z"
             }
           ]
         },
