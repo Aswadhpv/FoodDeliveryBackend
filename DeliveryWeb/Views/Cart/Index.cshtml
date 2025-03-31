@@ -1,0 +1,39 @@
+﻿@model List<FoodDeliveryFrontend.Models.CartItem>
+@{
+    ViewData["Title"] = "Your Cart";
+}
+
+<h2>Your Cart</h2>
+
+@if (Model.Count == 0)
+{
+    <div class="alert alert-info">Your cart is empty.</div>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Dish</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Quantity</td>
+                    <td>$@item.Price</td>
+                    <td>$@(item.Price * item.Quantity)</td>
+                    <td>
+                        <a href="@Url.Action("Remove", "Cart", new { dishId = item.DishId })" class="btn btn-danger btn-sm">Remove</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
