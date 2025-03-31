@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "..\\DeliveryWeb\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\aswad\\Desktop\\Backend\\DeliveryWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "..\\DeliveryWeb\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-31T04:55:47.987Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "..\\DeliveryWeb\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T04:55:24.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T04:55:24.351Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "..\\DeliveryWeb\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T04:53:42.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T04:53:42.583Z"
             },
             {
               "$type": "Document",
@@ -73,8 +71,7 @@
               "RelativeToolTip": "..\\DeliveryWeb\\Program.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAA5wBoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T04:40:52.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T04:40:52.55Z"
             }
           ]
         },
