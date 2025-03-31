@@ -673,7 +673,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.2"
         },
         "runtime": {
-          "DAL.dll": {}
+          "DAL.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "DTO/1.0.0": {
@@ -681,7 +684,10 @@
           "AutoMapper": "13.0.1"
         },
         "runtime": {
-          "DTO.dll": {}
+          "DTO.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

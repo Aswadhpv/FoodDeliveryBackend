@@ -163,3 +163,7 @@ C:\Users\aswad\Desktop\Backend\FoodDeliveryBackend\obj\Debug\net8.0\refint\FoodD
 C:\Users\aswad\Desktop\Backend\FoodDeliveryBackend\obj\Debug\net8.0\FoodDeliveryBackend.pdb
 C:\Users\aswad\Desktop\Backend\FoodDeliveryBackend\obj\Debug\net8.0\FoodDeliveryBackend.genruntimeconfig.cache
 C:\Users\aswad\Desktop\Backend\FoodDeliveryBackend\obj\Debug\net8.0\ref\FoodDeliveryBackend.dll
+C:\Users\aswad\Desktop\Backend\FoodDeliveryBackend\bin\Debug\net8.0\FoodDeliveryBackend.staticwebassets.endpoints.json
+C:\Users\aswad\Desktop\Backend\FoodDeliveryBackend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\aswad\Desktop\Backend\FoodDeliveryBackend\obj\Debug\net8.0\staticwebassets\msbuild.FoodDeliveryBackend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\aswad\Desktop\Backend\FoodDeliveryBackend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

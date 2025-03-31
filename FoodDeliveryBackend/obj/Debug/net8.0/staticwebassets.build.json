@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "SjoiJ9NxR+L7fIMzp0hcVf9TQCSw7EmdfrL1e/hH/q4=",
+  "Hash": "Sjgt/MGYLYCgIIuIj0WkIq+kiwwxC+MjsysmasLOKBc=",
   "Source": "FoodDeliveryBackend",
   "BasePath": "_content/FoodDeliveryBackend",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

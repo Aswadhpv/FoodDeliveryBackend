@@ -28,3 +28,7 @@ C:\Users\aswad\Desktop\Backend\DeliveryWeb\obj\Debug\net8.0\refint\DeliveryWeb.d
 C:\Users\aswad\Desktop\Backend\DeliveryWeb\obj\Debug\net8.0\DeliveryWeb.pdb
 C:\Users\aswad\Desktop\Backend\DeliveryWeb\obj\Debug\net8.0\DeliveryWeb.genruntimeconfig.cache
 C:\Users\aswad\Desktop\Backend\DeliveryWeb\obj\Debug\net8.0\ref\DeliveryWeb.dll
+C:\Users\aswad\Desktop\Backend\DeliveryWeb\bin\Debug\net8.0\DeliveryWeb.staticwebassets.endpoints.json
+C:\Users\aswad\Desktop\Backend\DeliveryWeb\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\aswad\Desktop\Backend\DeliveryWeb\obj\Debug\net8.0\staticwebassets\msbuild.DeliveryWeb.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\aswad\Desktop\Backend\DeliveryWeb\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
